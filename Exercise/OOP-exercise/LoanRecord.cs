@@ -4,7 +4,5 @@ using System.Text;
 
 namespace OOP_exercise
 {
-    internal class LoanRecord
-    {
-    }
+    public record LoanRecord(int LoanId, int MemberId, int ItemId, DateTime BorrowDate);
 }
