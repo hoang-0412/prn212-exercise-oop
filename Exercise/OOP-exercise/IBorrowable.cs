@@ -4,7 +4,10 @@ using System.Text;
 
 namespace OOP_exercise
 {
-    internal interface IBorrowable
+    public interface IBorrowable
     {
+        bool isAvailable { get; set; }
+        void Borrow();
+        void Return();
     }
 }
