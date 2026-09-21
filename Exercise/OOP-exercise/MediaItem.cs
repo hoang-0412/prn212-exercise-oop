@@ -15,7 +15,7 @@ namespace OOP_exercise
             Title = title;
             PublishYear = publishYear;
         }
-        public abstract double CalculateOverdueFee(int overdueDays);
+        public abstract decimal CalculateOverdueFee(int overdueDays);
         public virtual void DisplayInfo()
         {
             Console.WriteLine($"[ID: {Id}] {Title} ({PublishYear})");

@@ -6,7 +6,7 @@ namespace OOP_exercise
 {
     public interface IBorrowable
     {
-        bool IsAvailable { get; set; }
+        bool IsAvailable { get;}
         void Borrow();
         void Return();
     }

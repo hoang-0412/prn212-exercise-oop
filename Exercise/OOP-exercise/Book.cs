@@ -15,7 +15,6 @@ namespace OOP_exercise
             NumberOfPages = numberOfPages;
         }
 
-        // Phí phạt sách in: 5,000 VND / ngày trễ hạn
         public override decimal CalculateOverdueFee(int overdueDays)
         {
             return overdueDays <= 0 ? 0 : overdueDays * 5000m;
