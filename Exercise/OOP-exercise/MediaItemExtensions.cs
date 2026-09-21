@@ -4,7 +4,12 @@ using System.Text;
 
 namespace OOP_exercise
 {
-    internal class MediaItemExtensions
+    public static class MediaItemExtensions
     {
+        public static List<MediaItem> GetItemsPublishedAfter(this List<MediaItem> items, int year)
+        {
+            if(items == null) return new List<MediaItem>();
+            return items.Where(item => item.PublishYear > year).ToList();
+        }
     }
 }
